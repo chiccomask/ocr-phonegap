@@ -226,5 +226,7 @@ function disableButtons(disabled){
   document.querySelectorAll('#menu BUTTON').forEach(function (item){
     item.disabled=disabled;
   });
-  document.getElementById('plain').innerHTML="";
+  if(disabled){
+    document.getElementById('plain').innerHTML="";
+  }
 }
