@@ -200,7 +200,7 @@ function ocr(){
   var ocrButton=document.getElementById('ocrButton');
   
   Tesseract.recognize(canvas,{
-    lang: 'ita'
+    lang: 'eng'
   })
   .progress(function(message){
     
